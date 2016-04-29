@@ -17,7 +17,7 @@ public class User {
 	
 	// Queries
 	
-	final private static String CREATE = "INSERT INTO USER (idAdr, gender, fName, lName, email, mobilePhone, homePhone, password, radius, dateSignin) VALUES (?,?,?,?,?,?,?,?,?,?);";
+	final private static String  CREATE = "INSERT INTO USER (idAdr, gender, fName, lName, email, mobilePhone, homePhone, password, radius, dateSignin) VALUES (?,?,?,?,?,?,?,?,?,?);";
 	final private static String READ = "SELECT id, idAdr, gender, fName, lName, email, mobilePhone, homePhone, password, radius, dateSignin FROM USER WHERE id = ?;";
 	final private static String UPDATE = "UPDATE USER SET idAdr = ?, gender = ?, fName = ?, lName = ?, email = ?, mobilePhone = ?, homePhone = ?, password = ?, radius = ? WHERE id = ?;";
 	final private static String DELETE = "DELETE FROM USER WHERE id = ?;";
